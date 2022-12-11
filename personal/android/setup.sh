@@ -8,6 +8,8 @@ read -p 'Input your desire number for ccache size in gigs ~> ' ccacheSize
 
 clear
 
+dpkg --add-architecture i386
+
 sudo apt-get install -y openjdk-11-jdk \
                         bison \
                         g++-multilib \
