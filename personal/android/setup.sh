@@ -7,11 +7,18 @@
 # Also haven't support yet for other distros
 # But might work on Debian-based distros & other Ubuntu flavors
 #
+
+clear
+
 read -p 'Input your Git email ~> ' gitEmail
 read -p 'Input your Git name ~> ' gitName
 read -p 'Input your desire number for ccache size in gigs ~> ' ccacheSize
 
 clear
+
+# Update installed pkgs
+sudo apt-get update \
+&& sudo apt-get upgrade -y
 
 # Enable i386 architecture
 dpkg --add-architecture i386
