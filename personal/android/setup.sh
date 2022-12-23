@@ -40,7 +40,8 @@ sudo apt-get install -y openjdk-11-jdk \
                         flex \
                         curl \
                         python-is-python3 \
-                        zlib1g-dev
+                        zlib1g-dev \
+                        ccache
 
 # Install repo
 mkdir ~/bin \
